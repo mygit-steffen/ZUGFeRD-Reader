@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rsm2:CrossIndustryDocument
+	xmlns:rsm2="urn:ferd:CrossIndustryDocument:invoice:1p0"
+    xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:15"
+    xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12">
+	<rsm2:SpecifiedExchangedDocumentContext>
+		<ram:TestIndicator>
+			<udt:Indicator>true</udt:Indicator>
+		</ram:TestIndicator>
+		<ram:GuidelineSpecifiedDocumentContextParameter>
+			<ram:ID>urn:ferd:CrossIndustryDocument:invoice:1p0:extended</ram:ID>
+		</ram:GuidelineSpecifiedDocumentContextParameter>
+	</rsm2:SpecifiedExchangedDocumentContext>
+	<rsm2:HeaderExchangedDocument>
+		<ram:ID>2014311860/25250473</ram:ID>
+		<ram:Name>Rechnung</ram:Name>
+		<ram:TypeCode>384</ram:TypeCode>
+		<ram:IssueDateTime>
+			<udt:DateTimeString format="102">20171130</udt:DateTimeString>
+		</ram:IssueDateTime>
+		<ram:CopyIndicator>
+			<udt:Indicator>false</udt:Indicator>
+		</ram:CopyIndicator>
+		<ram:EffectiveSpecifiedPeriod>
+			<ram:CompleteDateTime>
+				<udt:DateTimeString format="102">20171222</udt:DateTimeString>
+			</ram:CompleteDateTime>
+		</ram:EffectiveSpecifiedPeriod>
+	</rsm2:HeaderExchangedDocument>
+	<rsm2:SpecifiedSupplyChainTradeTransaction>
+		<ram:ApplicableSupplyChainTradeAgreement>
+			<ram:BuyerReference>002014311860</ram:BuyerReference>
+			<ram:SellerTradeParty>
+				<ram:GlobalID schemeID="0088">2 500611 182174</ram:GlobalID>
+				<ram:Name>SWM Versorgungs GmbH</ram:Name>
+				<ram:DefinedTradeContact>
+					<ram:PersonName>Carola Mersmann</ram:PersonName>
+					<ram:TelephoneUniversalCommunication>
+						<ram:CompleteNumber>0800 796 475 209</ram:CompleteNumber>
+					</ram:TelephoneUniversalCommunication>
+					<ram:EmailURIUniversalCommunication>
+						<ram:URIID>gk-service@swm.de</ram:URIID>
+					</ram:EmailURIUniversalCommunication>
+				</ram:DefinedTradeContact>
+				<ram:PostalTradeAddress>
+					<ram:PostcodeCode>80992</ram:PostcodeCode>
+					<ram:LineOne>Emmy-Noether-Straße 2</ram:LineOne>
+					<ram:CityName>München</ram:CityName>
+					<ram:CountryID>DE</ram:CountryID>
+				</ram:PostalTradeAddress>
+				<ram:SpecifiedTaxRegistration>
+					<ram:ID schemeID="0088">DE813086573</ram:ID>
+				</ram:SpecifiedTaxRegistration>
+			</ram:SellerTradeParty>
+			<ram:BuyerTradeParty>
+				<ram:ID>1001412332</ram:ID>
+				<ram:GlobalID schemeID="0088">1001412332</ram:GlobalID>
+				<ram:Name>HF Sedlmayr Grundstücksverwaltungs-GmbH &amp; Co.KG</ram:Name>
+				<ram:PostalTradeAddress>
+					<ram:LineOne>Marsstraße 46-48</ram:LineOne>
+					<ram:CityName>München</ram:CityName>
+					<ram:CountryID>DE</ram:CountryID>
+				</ram:PostalTradeAddress>
+			</ram:BuyerTradeParty>
+			<ram:AdditionalReferencedDocument>
+				<ram:TypeCode>BC</ram:TypeCode>
+				<ram:ID>3002963380</ram:ID>
+			</ram:AdditionalReferencedDocument>
+		</ram:ApplicableSupplyChainTradeAgreement>
+		<ram:ApplicableSupplyChainTradeDelivery>
+			<ram:ShipToTradeParty>
+				<ram:Name>HF Sedlmayr Grundstücksverwaltungs-GmbH &amp; Co.KG</ram:Name>
+				<ram:PostalTradeAddress>
+					<ram:PostcodeCode>80796</ram:PostcodeCode>
+					<ram:LineOne>Jakob-Klar-Straße 14</ram:LineOne>
+					<ram:CityName>München</ram:CityName>
+					<ram:CountryID>DE</ram:CountryID>
+				</ram:PostalTradeAddress>
+			</ram:ShipToTradeParty>
+		</ram:ApplicableSupplyChainTradeDelivery>
+		<ram:ApplicableSupplyChainTradeSettlement>
+			<ram:InvoiceCurrencyCode>EUR</ram:InvoiceCurrencyCode>
+			<ram:BillingSpecifiedPeriod>
+				<ram:StartDateTime>
+					<udt:DateTimeString format="102">20170101</udt:DateTimeString>
+				</ram:StartDateTime>
+				<ram:EndDateTime>
+					<udt:DateTimeString format="102">20171231</udt:DateTimeString>
+				</ram:EndDateTime>
+			</ram:BillingSpecifiedPeriod>
+			<ram:SpecifiedTradeSettlementMonetarySummation>
+				<ram:LineTotalAmount currencyID="EUR">18138.55</ram:LineTotalAmount>
+				<ram:ChargeTotalAmount currencyID="EUR">0.00</ram:ChargeTotalAmount>
+				<ram:AllowanceTotalAmount currencyID="EUR">0.00</ram:AllowanceTotalAmount>
+				<ram:TaxBasisTotalAmount currencyID="EUR">18138.55</ram:TaxBasisTotalAmount>
+				<ram:TaxTotalAmount currencyID="EUR">3446.32</ram:TaxTotalAmount>
+				<ram:GrandTotalAmount currencyID="EUR">21584.87</ram:GrandTotalAmount>
+				<ram:TotalPrepaidAmount currencyID="EUR">16030.00-</ram:TotalPrepaidAmount>
+				<ram:DuePayableAmount currencyID="EUR">5554.87</ram:DuePayableAmount>
+			</ram:SpecifiedTradeSettlementMonetarySummation>
+		</ram:ApplicableSupplyChainTradeSettlement>
+		<ram:IncludedSupplyChainTradeLineItem>
+			<ram:AssociatedDocumentLineDocument>
+				<ram:LineID>001</ram:LineID>
+			</ram:AssociatedDocumentLineDocument>
+			<ram:SpecifiedSupplyChainTradeAgreement>
+				<ram:NetPriceProductTradePrice>
+					<ram:ChargeAmount currencyID="EUR">38.1600</ram:ChargeAmount>
+					<ram:BasisQuantity unitCode="MTQ">1.0000</ram:BasisQuantity>
+				</ram:NetPriceProductTradePrice>
+			</ram:SpecifiedSupplyChainTradeAgreement>
+			<ram:SpecifiedSupplyChainTradeDelivery>
+				<ram:BilledQuantity unitCode="MTQ">136.8500</ram:BilledQuantity>
+			</ram:SpecifiedSupplyChainTradeDelivery>
+			<ram:SpecifiedSupplyChainTradeSettlement>
+				<ram:ApplicableTradeTax>
+					<ram:ApplicablePercent>019000</ram:ApplicablePercent>
+				</ram:ApplicableTradeTax>
+				<ram:BillingSpecifiedPeriod>
+					<ram:StartDateTime>
+						<udt:DateTimeString format="102">20170101</udt:DateTimeString>
+					</ram:StartDateTime>
+					<ram:EndDateTime>
+						<udt:DateTimeString format="102">20170331</udt:DateTimeString>
+					</ram:EndDateTime>
+				</ram:BillingSpecifiedPeriod>
+				<ram:SpecifiedTradeSettlementMonetarySummation>
+					<ram:LineTotalAmount currencyID="EUR">5222.20</ram:LineTotalAmount>
+				</ram:SpecifiedTradeSettlementMonetarySummation>
+			</ram:SpecifiedSupplyChainTradeSettlement>
+			<ram:SpecifiedTradeProduct>
+				<ram:Name>Arbeitspreis</ram:Name>
+			</ram:SpecifiedTradeProduct>
+		</ram:IncludedSupplyChainTradeLineItem>
+		<ram:IncludedSupplyChainTradeLineItem>
+			<ram:AssociatedDocumentLineDocument>
+				<ram:LineID>002</ram:LineID>
+			</ram:AssociatedDocumentLineDocument>
+			<ram:SpecifiedSupplyChainTradeAgreement>
+				<ram:NetPriceProductTradePrice>
+					<ram:ChargeAmount currencyID="EUR">40.8900</ram:ChargeAmount>
+					<ram:BasisQuantity unitCode="MTQ">1.0000</ram:BasisQuantity>
+				</ram:NetPriceProductTradePrice>
+			</ram:SpecifiedSupplyChainTradeAgreement>
+			<ram:SpecifiedSupplyChainTradeDelivery>
+				<ram:BilledQuantity unitCode="MTQ">59.5400</ram:BilledQuantity>
+			</ram:SpecifiedSupplyChainTradeDelivery>
+			<ram:SpecifiedSupplyChainTradeSettlement>
+				<ram:ApplicableTradeTax>
+					<ram:ApplicablePercent>019000</ram:ApplicablePercent>
+				</ram:ApplicableTradeTax>
+				<ram:BillingSpecifiedPeriod>
+					<ram:StartDateTime>
+						<udt:DateTimeString format="102">20170401</udt:DateTimeString>
+					</ram:StartDateTime>
+					<ram:EndDateTime>
+						<udt:DateTimeString format="102">20170630</udt:DateTimeString>
+					</ram:EndDateTime>
+				</ram:BillingSpecifiedPeriod>
+				<ram:SpecifiedTradeSettlementMonetarySummation>
+					<ram:LineTotalAmount currencyID="EUR">2434.59</ram:LineTotalAmount>
+				</ram:SpecifiedTradeSettlementMonetarySummation>
+			</ram:SpecifiedSupplyChainTradeSettlement>
+			<ram:SpecifiedTradeProduct>
+				<ram:Name>Arbeitspreis</ram:Name>
+			</ram:SpecifiedTradeProduct>
+		</ram:IncludedSupplyChainTradeLineItem>
+		<ram:IncludedSupplyChainTradeLineItem>
+			<ram:AssociatedDocumentLineDocument>
+				<ram:LineID>003</ram:LineID>
+			</ram:AssociatedDocumentLineDocument>
+			<ram:SpecifiedSupplyChainTradeAgreement>
+				<ram:NetPriceProductTradePrice>
+					<ram:ChargeAmount currencyID="EUR">41.7100</ram:ChargeAmount>
+					<ram:BasisQuantity unitCode="MTQ">1.0000</ram:BasisQuantity>
+				</ram:NetPriceProductTradePrice>
+			</ram:SpecifiedSupplyChainTradeAgreement>
+			<ram:SpecifiedSupplyChainTradeDelivery>
+				<ram:BilledQuantity unitCode="MTQ">38.3800</ram:BilledQuantity>
+			</ram:SpecifiedSupplyChainTradeDelivery>
+			<ram:SpecifiedSupplyChainTradeSettlement>
+				<ram:ApplicableTradeTax>
+					<ram:ApplicablePercent>019000</ram:ApplicablePercent>
+				</ram:ApplicableTradeTax>
+				<ram:BillingSpecifiedPeriod>
+					<ram:StartDateTime>
+						<udt:DateTimeString format="102">20170701</udt:DateTimeString>
+					</ram:StartDateTime>
+					<ram:EndDateTime>
+						<udt:DateTimeString format="102">20170930</udt:DateTimeString>
+					</ram:EndDateTime>
+				</ram:BillingSpecifiedPeriod>
+				<ram:SpecifiedTradeSettlementMonetarySummation>
+					<ram:LineTotalAmount currencyID="EUR">1600.83</ram:LineTotalAmount>
+				</ram:SpecifiedTradeSettlementMonetarySummation>
+			</ram:SpecifiedSupplyChainTradeSettlement>
+			<ram:SpecifiedTradeProduct>
+				<ram:Name>Arbeitspreis</ram:Name>
+			</ram:SpecifiedTradeProduct>
+		</ram:IncludedSupplyChainTradeLineItem>
+		<ram:IncludedSupplyChainTradeLineItem>
+			<ram:AssociatedDocumentLineDocument>
+				<ram:LineID>004</ram:LineID>
+			</ram:AssociatedDocumentLineDocument>
+			<ram:SpecifiedSupplyChainTradeAgreement>
+				<ram:NetPriceProductTradePrice>
+					<ram:ChargeAmount currencyID="EUR">40.2700</ram:ChargeAmount>
+					<ram:BasisQuantity unitCode="MTQ">1.0000</ram:BasisQuantity>
+				</ram:NetPriceProductTradePrice>
+			</ram:SpecifiedSupplyChainTradeAgreement>
+			<ram:SpecifiedSupplyChainTradeDelivery>
+				<ram:BilledQuantity unitCode="MTQ">120.9800</ram:BilledQuantity>
+			</ram:SpecifiedSupplyChainTradeDelivery>
+			<ram:SpecifiedSupplyChainTradeSettlement>
+				<ram:ApplicableTradeTax>
+					<ram:ApplicablePercent>019000</ram:ApplicablePercent>
+				</ram:ApplicableTradeTax>
+				<ram:BillingSpecifiedPeriod>
+					<ram:StartDateTime>
+						<udt:DateTimeString format="102">20171001</udt:DateTimeString>
+					</ram:StartDateTime>
+					<ram:EndDateTime>
+						<udt:DateTimeString format="102">20171231</udt:DateTimeString>
+					</ram:EndDateTime>
+				</ram:BillingSpecifiedPeriod>
+				<ram:SpecifiedTradeSettlementMonetarySummation>
+					<ram:LineTotalAmount currencyID="EUR">4871.86</ram:LineTotalAmount>
+				</ram:SpecifiedTradeSettlementMonetarySummation>
+			</ram:SpecifiedSupplyChainTradeSettlement>
+			<ram:SpecifiedTradeProduct>
+				<ram:Name>Arbeitspreis</ram:Name>
+			</ram:SpecifiedTradeProduct>
+		</ram:IncludedSupplyChainTradeLineItem>
+		<ram:IncludedSupplyChainTradeLineItem>
+			<ram:AssociatedDocumentLineDocument>
+				<ram:LineID>005</ram:LineID>
+			</ram:AssociatedDocumentLineDocument>
+			<ram:SpecifiedSupplyChainTradeAgreement>
+				<ram:NetPriceProductTradePrice>
+					<ram:ChargeAmount currencyID="EUR">37.5200</ram:ChargeAmount>
+					<ram:BasisQuantity unitCode="DAY">365.0000</ram:BasisQuantity>
+				</ram:NetPriceProductTradePrice>
+			</ram:SpecifiedSupplyChainTradeAgreement>
+			<ram:SpecifiedSupplyChainTradeDelivery>
+				<ram:BilledQuantity unitCode="DAY">90.0000</ram:BilledQuantity>
+			</ram:SpecifiedSupplyChainTradeDelivery>
+			<ram:SpecifiedSupplyChainTradeSettlement>
+				<ram:ApplicableTradeTax>
+					<ram:ApplicablePercent>019000</ram:ApplicablePercent>
+				</ram:ApplicableTradeTax>
+				<ram:BillingSpecifiedPeriod>
+					<ram:StartDateTime>
+						<udt:DateTimeString format="102">20170101</udt:DateTimeString>
+					</ram:StartDateTime>
+					<ram:EndDateTime>
+						<udt:DateTimeString format="102">20170331</udt:DateTimeString>
+					</ram:EndDateTime>
+				</ram:BillingSpecifiedPeriod>
+				<ram:SpecifiedTradeSettlementMonetarySummation>
+					<ram:LineTotalAmount currencyID="EUR">925.15</ram:LineTotalAmount>
+				</ram:SpecifiedTradeSettlementMonetarySummation>
+			</ram:SpecifiedSupplyChainTradeSettlement>
+			<ram:SpecifiedTradeProduct>
+				<ram:Name>Grundpreis</ram:Name>
+			</ram:SpecifiedTradeProduct>
+		</ram:IncludedSupplyChainTradeLineItem>
+		<ram:IncludedSupplyChainTradeLineItem>
+			<ram:AssociatedDocumentLineDocument>
+				<ram:LineID>006</ram:LineID>
+			</ram:AssociatedDocumentLineDocument>
+			<ram:SpecifiedSupplyChainTradeAgreement>
+				<ram:NetPriceProductTradePrice>
+					<ram:ChargeAmount currencyID="EUR">37.8700</ram:ChargeAmount>
+					<ram:BasisQuantity unitCode="DAY">365.0000</ram:BasisQuantity>
+				</ram:NetPriceProductTradePrice>
+			</ram:SpecifiedSupplyChainTradeAgreement>
+			<ram:SpecifiedSupplyChainTradeDelivery>
+				<ram:BilledQuantity unitCode="DAY">91.0000</ram:BilledQuantity>
+			</ram:SpecifiedSupplyChainTradeDelivery>
+			<ram:SpecifiedSupplyChainTradeSettlement>
+				<ram:ApplicableTradeTax>
+					<ram:ApplicablePercent>019000</ram:ApplicablePercent>
+				</ram:ApplicableTradeTax>
+				<ram:BillingSpecifiedPeriod>
+					<ram:StartDateTime>
+						<udt:DateTimeString format="102">20170401</udt:DateTimeString>
+					</ram:StartDateTime>
+					<ram:EndDateTime>
+						<udt:DateTimeString format="102">20170630</udt:DateTimeString>
+					</ram:EndDateTime>
+				</ram:BillingSpecifiedPeriod>
+				<ram:SpecifiedTradeSettlementMonetarySummation>
+					<ram:LineTotalAmount currencyID="EUR">944.16</ram:LineTotalAmount>
+				</ram:SpecifiedTradeSettlementMonetarySummation>
+			</ram:SpecifiedSupplyChainTradeSettlement>
+			<ram:SpecifiedTradeProduct>
+				<ram:Name>Grundpreis</ram:Name>
+			</ram:SpecifiedTradeProduct>
+		</ram:IncludedSupplyChainTradeLineItem>
+		<ram:IncludedSupplyChainTradeLineItem>
+			<ram:AssociatedDocumentLineDocument>
+				<ram:LineID>007</ram:LineID>
+			</ram:AssociatedDocumentLineDocument>
+			<ram:SpecifiedSupplyChainTradeAgreement>
+				<ram:NetPriceProductTradePrice>
+					<ram:ChargeAmount currencyID="EUR">37.9800</ram:ChargeAmount>
+					<ram:BasisQuantity unitCode="DAY">365.0000</ram:BasisQuantity>
+				</ram:NetPriceProductTradePrice>
+			</ram:SpecifiedSupplyChainTradeAgreement>
+			<ram:SpecifiedSupplyChainTradeDelivery>
+				<ram:BilledQuantity unitCode="DAY">92.0000</ram:BilledQuantity>
+			</ram:SpecifiedSupplyChainTradeDelivery>
+			<ram:SpecifiedSupplyChainTradeSettlement>
+				<ram:ApplicableTradeTax>
+					<ram:ApplicablePercent>019000</ram:ApplicablePercent>
+				</ram:ApplicableTradeTax>
+				<ram:BillingSpecifiedPeriod>
+					<ram:StartDateTime>
+						<udt:DateTimeString format="102">20170701</udt:DateTimeString>
+					</ram:StartDateTime>
+					<ram:EndDateTime>
+						<udt:DateTimeString format="102">20170930</udt:DateTimeString>
+					</ram:EndDateTime>
+				</ram:BillingSpecifiedPeriod>
+				<ram:SpecifiedTradeSettlementMonetarySummation>
+					<ram:LineTotalAmount currencyID="EUR">957.30</ram:LineTotalAmount>
+				</ram:SpecifiedTradeSettlementMonetarySummation>
+			</ram:SpecifiedSupplyChainTradeSettlement>
+			<ram:SpecifiedTradeProduct>
+				<ram:Name>Grundpreis</ram:Name>
+			</ram:SpecifiedTradeProduct>
+		</ram:IncludedSupplyChainTradeLineItem>
+		<ram:IncludedSupplyChainTradeLineItem>
+			<ram:AssociatedDocumentLineDocument>
+				<ram:LineID>008</ram:LineID>
+			</ram:AssociatedDocumentLineDocument>
+			<ram:SpecifiedSupplyChainTradeAgreement>
+				<ram:NetPriceProductTradePrice>
+					<ram:ChargeAmount currencyID="EUR">38.0300</ram:ChargeAmount>
+					<ram:BasisQuantity unitCode="DAY">365.0000</ram:BasisQuantity>
+				</ram:NetPriceProductTradePrice>
+			</ram:SpecifiedSupplyChainTradeAgreement>
+			<ram:SpecifiedSupplyChainTradeDelivery>
+				<ram:BilledQuantity unitCode="DAY">92.0000</ram:BilledQuantity>
+			</ram:SpecifiedSupplyChainTradeDelivery>
+			<ram:SpecifiedSupplyChainTradeSettlement>
+				<ram:ApplicableTradeTax>
+					<ram:ApplicablePercent>019000</ram:ApplicablePercent>
+				</ram:ApplicableTradeTax>
+				<ram:BillingSpecifiedPeriod>
+					<ram:StartDateTime>
+						<udt:DateTimeString format="102">20171001</udt:DateTimeString>
+					</ram:StartDateTime>
+					<ram:EndDateTime>
+						<udt:DateTimeString format="102">20171231</udt:DateTimeString>
+					</ram:EndDateTime>
+				</ram:BillingSpecifiedPeriod>
+				<ram:SpecifiedTradeSettlementMonetarySummation>
+					<ram:LineTotalAmount currencyID="EUR">958.56</ram:LineTotalAmount>
+				</ram:SpecifiedTradeSettlementMonetarySummation>
+			</ram:SpecifiedSupplyChainTradeSettlement>
+			<ram:SpecifiedTradeProduct>
+				<ram:Name>Grundpreis</ram:Name>
+			</ram:SpecifiedTradeProduct>
+		</ram:IncludedSupplyChainTradeLineItem>
+		<ram:IncludedSupplyChainTradeLineItem>
+			<ram:AssociatedDocumentLineDocument>
+				<ram:LineID>009</ram:LineID>
+			</ram:AssociatedDocumentLineDocument>
+			<ram:SpecifiedSupplyChainTradeAgreement>
+				<ram:NetPriceProductTradePrice>
+					<ram:ChargeAmount currencyID="EUR">208.5600</ram:ChargeAmount>
+					<ram:BasisQuantity unitCode="DAY">365.0000</ram:BasisQuantity>
+				</ram:NetPriceProductTradePrice>
+			</ram:SpecifiedSupplyChainTradeAgreement>
+			<ram:SpecifiedSupplyChainTradeDelivery>
+				<ram:BilledQuantity unitCode="DAY">58.0000</ram:BilledQuantity>
+			</ram:SpecifiedSupplyChainTradeDelivery>
+			<ram:SpecifiedSupplyChainTradeSettlement>
+				<ram:ApplicableTradeTax>
+					<ram:ApplicablePercent>019000</ram:ApplicablePercent>
+				</ram:ApplicableTradeTax>
+				<ram:BillingSpecifiedPeriod>
+					<ram:StartDateTime>
+						<udt:DateTimeString format="102">20170101</udt:DateTimeString>
+					</ram:StartDateTime>
+					<ram:EndDateTime>
+						<udt:DateTimeString format="102">20170227</udt:DateTimeString>
+					</ram:EndDateTime>
+				</ram:BillingSpecifiedPeriod>
+				<ram:SpecifiedTradeSettlementMonetarySummation>
+					<ram:LineTotalAmount currencyID="EUR">33.14</ram:LineTotalAmount>
+				</ram:SpecifiedTradeSettlementMonetarySummation>
+			</ram:SpecifiedSupplyChainTradeSettlement>
+			<ram:SpecifiedTradeProduct>
+				<ram:Name>Messpreis</ram:Name>
+			</ram:SpecifiedTradeProduct>
+		</ram:IncludedSupplyChainTradeLineItem>
+		<ram:IncludedSupplyChainTradeLineItem>
+			<ram:AssociatedDocumentLineDocument>
+				<ram:LineID>010</ram:LineID>
+			</ram:AssociatedDocumentLineDocument>
+			<ram:SpecifiedSupplyChainTradeAgreement>
+				<ram:NetPriceProductTradePrice>
+					<ram:ChargeAmount currencyID="EUR">208.5600</ram:ChargeAmount>
+					<ram:BasisQuantity unitCode="DAY">365.0000</ram:BasisQuantity>
+				</ram:NetPriceProductTradePrice>
+			</ram:SpecifiedSupplyChainTradeAgreement>
+			<ram:SpecifiedSupplyChainTradeDelivery>
+				<ram:BilledQuantity unitCode="DAY">307.0000</ram:BilledQuantity>
+			</ram:SpecifiedSupplyChainTradeDelivery>
+			<ram:SpecifiedSupplyChainTradeSettlement>
+				<ram:ApplicableTradeTax>
+					<ram:ApplicablePercent>019000</ram:ApplicablePercent>
+				</ram:ApplicableTradeTax>
+				<ram:BillingSpecifiedPeriod>
+					<ram:StartDateTime>
+						<udt:DateTimeString format="102">20170228</udt:DateTimeString>
+					</ram:StartDateTime>
+					<ram:EndDateTime>
+						<udt:DateTimeString format="102">20171231</udt:DateTimeString>
+					</ram:EndDateTime>
+				</ram:BillingSpecifiedPeriod>
+				<ram:SpecifiedTradeSettlementMonetarySummation>
+					<ram:LineTotalAmount currencyID="EUR">175.42</ram:LineTotalAmount>
+				</ram:SpecifiedTradeSettlementMonetarySummation>
+			</ram:SpecifiedSupplyChainTradeSettlement>
+			<ram:SpecifiedTradeProduct>
+				<ram:Name>Messpreis</ram:Name>
+			</ram:SpecifiedTradeProduct>
+		</ram:IncludedSupplyChainTradeLineItem>
+		<ram:IncludedSupplyChainTradeLineItem>
+			<ram:AssociatedDocumentLineDocument>
+				<ram:LineID>011</ram:LineID>
+			</ram:AssociatedDocumentLineDocument>
+			<ram:SpecifiedSupplyChainTradeAgreement>
+				<ram:NetPriceProductTradePrice>
+					<ram:ChargeAmount currencyID="EUR">15.3400</ram:ChargeAmount>
+					<ram:BasisQuantity unitCode="ANN">1.0000</ram:BasisQuantity>
+				</ram:NetPriceProductTradePrice>
+			</ram:SpecifiedSupplyChainTradeAgreement>
+			<ram:SpecifiedSupplyChainTradeDelivery>
+				<ram:BilledQuantity unitCode="ANN">0.0000</ram:BilledQuantity>
+			</ram:SpecifiedSupplyChainTradeDelivery>
+			<ram:SpecifiedSupplyChainTradeSettlement>
+				<ram:ApplicableTradeTax>
+					<ram:ApplicablePercent>019000</ram:ApplicablePercent>
+				</ram:ApplicableTradeTax>
+				<ram:BillingSpecifiedPeriod>
+					<ram:StartDateTime>
+						<udt:DateTimeString format="102">20170101</udt:DateTimeString>
+					</ram:StartDateTime>
+					<ram:EndDateTime>
+						<udt:DateTimeString format="102">20171231</udt:DateTimeString>
+					</ram:EndDateTime>
+				</ram:BillingSpecifiedPeriod>
+				<ram:SpecifiedTradeSettlementMonetarySummation>
+					<ram:LineTotalAmount currencyID="EUR">15.34</ram:LineTotalAmount>
+				</ram:SpecifiedTradeSettlementMonetarySummation>
+			</ram:SpecifiedSupplyChainTradeSettlement>
+			<ram:SpecifiedTradeProduct>
+				<ram:Name>Abrechnungspreis</ram:Name>
+			</ram:SpecifiedTradeProduct>
+		</ram:IncludedSupplyChainTradeLineItem>
+	</rsm2:SpecifiedSupplyChainTradeTransaction>
+</rsm2:CrossIndustryDocument>
+

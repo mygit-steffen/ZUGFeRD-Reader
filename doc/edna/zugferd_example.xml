@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rsm2:CrossIndustryDocument 
+	xmlns:rsm2="urn:ferd:CrossIndustryDocument:invoice:1p0"
+    xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:15"
+    xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12">
+  <rsm2:SpecifiedExchangedDocumentContext>
+    <ram:TestIndicator>
+      <udt:Indicator>true</udt:Indicator>
+    </ram:TestIndicator>
+    <!-- Angabe der verwendeten Spezifkation -->
+    <ram:GuidelineSpecifiedDocumentContextParameter>
+      <ram:ID>urn:ferd:CrossIndustryDocument:invoice:1p0:extended</ram:ID>
+    </ram:GuidelineSpecifiedDocumentContextParameter>
+  </rsm2:SpecifiedExchangedDocumentContext>
+
+<!-- Angaben zum Rechnungsdokument - Rechnungsnummer, etc. -->
+  <rsm2:HeaderExchangedDocument>
+    <!-- Rechnungsnummer -->
+    <ram:ID>2016-0000010</ram:ID>
+    <ram:Name>Rechnung</ram:Name>
+    <!-- Dokumentenart -->
+    <ram:TypeCode>380</ram:TypeCode>
+    <!-- Rechnugsdatum -->
+    <ram:IssueDateTime>
+      <udt:DateTimeString format="102">20160921</udt:DateTimeString>
+    </ram:IssueDateTime>
+    <ram:CopyIndicator>
+      <udt:Indicator>true</udt:Indicator>
+    </ram:CopyIndicator>
+    <ram:EffectiveSpecifiedPeriod>
+      <!-- Fälligkeit der Zahlung -->
+      <ram:CompleteDateTime>
+        <udt:DateTimeString format="102">20160921</udt:DateTimeString>
+      </ram:CompleteDateTime>
+    </ram:EffectiveSpecifiedPeriod>
+  </rsm2:HeaderExchangedDocument>
+  <rsm2:SpecifiedSupplyChainTradeTransaction>
+    <!-- Angaben zu den Vertragsparteien -->
+    <ram:ApplicableSupplyChainTradeAgreement>
+      <!-- Kundennummer -->
+      <ram:BuyerReference>KST_00001</ram:BuyerReference>
+      <!-- Verkäufer -->
+      <ram:SellerTradeParty>
+        <ram:ID>0000000001</ram:ID>
+        <ram:GlobalID schemeID="0088">9912345678901</ram:GlobalID>
+        <ram:Name>Joe Sixpack KG</ram:Name>
+        <ram:DefinedTradeContact>
+          <ram:PersonName>Max Mustermann</ram:PersonName>
+          <ram:TelephoneUniversalCommunication>
+            <ram:CompleteNumber>+49 3573 365410</ram:CompleteNumber>
+          </ram:TelephoneUniversalCommunication>
+          <ram:EmailURIUniversalCommunication>
+            <ram:URIID>mustermann@edna-bundesverband.de</ram:URIID>
+          </ram:EmailURIUniversalCommunication>
+        </ram:DefinedTradeContact>
+        <!-- Adresse des Verkäufers -->
+        <ram:PostalTradeAddress>
+          <ram:PostcodeCode>01968</ram:PostcodeCode>
+          <ram:LineOne>Ritterstraße 5</ram:LineOne>
+          <ram:LineTwo>Nebengebäude</ram:LineTwo>
+          <ram:CityName>Senftenberg</ram:CityName>
+          <ram:CountryID>DE</ram:CountryID>
+        </ram:PostalTradeAddress>
+        <!-- Steuernummer der Verkäufers -->
+        <ram:SpecifiedTaxRegistration>
+          <ram:ID schemeID="FC">XXXXXXXXXX</ram:ID>
+        </ram:SpecifiedTaxRegistration>
+        <!-- UmsatzsteuerID des Verkäufers -->
+        <ram:SpecifiedTaxRegistration>
+          <ram:ID schemeID="VA">XXXXXXXXXX</ram:ID>
+        </ram:SpecifiedTaxRegistration>
+      </ram:SellerTradeParty>
+      <!-- Kunde -->
+      <ram:BuyerTradeParty>
+        <ram:ID>KUNDE001</ram:ID>
+        <ram:GlobalID schemeID="0088">9990987654321</ram:GlobalID>
+        <ram:Name>Max Mustermann GmbH</ram:Name>
+        <!-- Adresse des Kunden -->
+        <ram:PostalTradeAddress>
+          <ram:PostcodeCode>01968</ram:PostcodeCode>
+          <ram:LineOne>Jemandstraße 10</ram:LineOne>
+          <ram:CityName>Senftenberg</ram:CityName>
+          <ram:CountryID>DE</ram:CountryID>
+        </ram:PostalTradeAddress>
+      </ram:BuyerTradeParty>
+      <!-- Vertragsdetails -->
+      <ram:ContractReferencedDocument>
+        <ram:ID>VERTRAG001</ram:ID>
+      </ram:ContractReferencedDocument>
+      <ram:AdditionalReferencedDocument>
+        <ram:TypeCode>VN</ram:TypeCode>
+        <ram:ID>VERTRAGSKONTO001</ram:ID>
+      </ram:AdditionalReferencedDocument>
+    </ram:ApplicableSupplyChainTradeAgreement>
+
+    <!-- Angaben zum Leistungsort -->
+    <ram:ApplicableSupplyChainTradeDelivery>
+      <ram:ShipToTradeParty>
+        <ram:ID>DE00076701968S0000000000000015237</ram:ID>
+        <ram:Name>Hauptzähler</ram:Name>
+        <ram:PostalTradeAddress>
+          <ram:PostcodeCode>01968</ram:PostcodeCode>
+          <ram:LineOne>Rittertstraße 5</ram:LineOne>
+          <ram:LineTwo></ram:LineTwo>
+          <ram:CityName>Senftenberg</ram:CityName>
+          <ram:CountryID>DE</ram:CountryID>
+        </ram:PostalTradeAddress>
+      </ram:ShipToTradeParty>
+    </ram:ApplicableSupplyChainTradeDelivery>
+
+    <!-- Gundlagen der Abrechnung Bankeinzug, Kostenstelle, etc. -->
+    <ram:ApplicableSupplyChainTradeSettlement>
+      <ram:InvoiceCurrencyCode>EUR</ram:InvoiceCurrencyCode>
+      <!-- abweichender Rechnungsempfänger -->
+      <ram:InvoiceeTradeParty>
+        <ram:Name>Rechnungszahler KG aAG</ram:Name>
+        <!-- Adresse des abweichenden Empfängers -->
+        <ram:PostalTradeAddress>
+          <ram:PostcodeCode>01968</ram:PostcodeCode>
+          <ram:LineOne>Ritterstraße 5</ram:LineOne>
+          <ram:CityName>Senftenberg</ram:CityName>
+          <ram:CountryID>DE</ram:CountryID>
+        </ram:PostalTradeAddress>
+      </ram:InvoiceeTradeParty>
+
+      <!-- Zahlungsmethode -->
+      <!-- Bankeinzug per SEPA-Mandat -->
+      <ram:SpecifiedTradeSettlementPaymentMeans>
+        <ram:TypeCode>49</ram:TypeCode>
+        <ram:ID schemeAgencyID="DE98ZZZ09999999999">ABCDE123456789</ram:ID>
+        <!-- Bankverbindung des Käufers -->
+        <ram:PayerPartyDebtorFinancialAccount>
+          <ram:IBANID>DE12500105170648489890</ram:IBANID>
+        </ram:PayerPartyDebtorFinancialAccount>
+        <!-- Bank des Käufers -->
+        <ram:PayerSpecifiedDebtorFinancialInstitution>
+          <ram:BICID>WELADED1OSL</ram:BICID>
+          <ram:Name>Sparkasse Niederlausitz</ram:Name>
+        </ram:PayerSpecifiedDebtorFinancialInstitution>
+      </ram:SpecifiedTradeSettlementPaymentMeans>
+
+      <!-- Zahlung an Bankonto -->
+      <ram:SpecifiedTradeSettlementPaymentMeans>
+        <ram:TypeCode>31</ram:TypeCode>
+
+        <!-- Bankverbindung des Verkäufers -->
+        <ram:PayeePartyCreditorFinancialAccount>
+          <ram:IBANID>DE12500105170648489890</ram:IBANID>
+          <ram:AccountName>ZUFeRD-Testkonto</ram:AccountName>
+        </ram:PayeePartyCreditorFinancialAccount>
+
+        <!-- Bank des Verkäufers -->
+        <ram:PayeeSpecifiedCreditorFinancialInstitution>
+          <ram:BICID>WELADED1OSL</ram:BICID>
+          <ram:Name>Sparkasse Niederlausitz</ram:Name>
+        </ram:PayeeSpecifiedCreditorFinancialInstitution>
+      </ram:SpecifiedTradeSettlementPaymentMeans>
+
+      <!-- Steuersätze -->
+      <ram:ApplicableTradeTax>
+        <!-- Steuerbetrag -->
+        <ram:CalculatedAmount currencyID="EUR">45.92</ram:CalculatedAmount>
+        <!-- Kennzeichnung als Umsatzsteuer -->
+        <ram:TypeCode>VAT</ram:TypeCode>
+        <!-- zu versteuernder Betrag -->
+        <ram:BasisAmount currencyID="EUR">241.69</ram:BasisAmount>
+        <!-- 19% Umsatzsteuer -->
+        <ram:ApplicablePercent>19.00</ram:ApplicablePercent>
+      </ram:ApplicableTradeTax>
+
+      <!-- Abrechnungsperiode -->
+      <ram:BillingSpecifiedPeriod>
+        <ram:StartDateTime>
+          <udt:DateTimeString format="102">20160901</udt:DateTimeString>
+        </ram:StartDateTime>
+        <ram:EndDateTime>
+          <udt:DateTimeString format="102">20160930</udt:DateTimeString>
+        </ram:EndDateTime>
+      </ram:BillingSpecifiedPeriod>
+
+      <!-- Zusammenfassung -->
+      <ram:SpecifiedTradeSettlementMonetarySummation>
+        <ram:LineTotalAmount currencyID="EUR">241.69</ram:LineTotalAmount>
+        <ram:ChargeTotalAmount currencyID="EUR">0.00</ram:ChargeTotalAmount>
+        <ram:AllowanceTotalAmount currencyID="EUR">0.00</ram:AllowanceTotalAmount>
+        <ram:TaxBasisTotalAmount currencyID="EUR">241.69</ram:TaxBasisTotalAmount>
+        <ram:TaxTotalAmount currencyID="EUR">45.92</ram:TaxTotalAmount>
+        <ram:GrandTotalAmount currencyID="EUR">287.61</ram:GrandTotalAmount>
+        <ram:TotalPrepaidAmount currencyID="EUR">0.00</ram:TotalPrepaidAmount>
+        <ram:DuePayableAmount currencyID="EUR">287.61</ram:DuePayableAmount>
+      </ram:SpecifiedTradeSettlementMonetarySummation>
+      <ram:ReceivableSpecifiedTradeAccountingAccount>
+        <ram:ID>KOSTENSTELLE001</ram:ID>
+      </ram:ReceivableSpecifiedTradeAccountingAccount>
+    </ram:ApplicableSupplyChainTradeSettlement>
+
+    <!-- ====================================== -->
+    <!-- Ab hier folgenden die Rechnungspositionen -->
+    <!-- 001 Abrechnungszeile/Position -->
+    <ram:IncludedSupplyChainTradeLineItem>
+      <ram:AssociatedDocumentLineDocument>
+        <!-- Position/Zeilennummer fortlaufend -->
+        <ram:LineID>001</ram:LineID>
+      </ram:AssociatedDocumentLineDocument>
+
+      <!-- Angaben zum Produktpreis -->
+      <ram:SpecifiedSupplyChainTradeAgreement>
+        <!-- Nettopreisberechnung aus einem rohen Bruttopreis (exkl. Ust.) -->
+        <ram:GrossPriceProductTradePrice>
+          <ram:ChargeAmount currencyID="EUR">0.1000</ram:ChargeAmount>
+          <ram:AppliedTradeAllowanceCharge>
+            <!-- Kennzeichen, ob die Position in einer anderen enthalten ist -->
+            <ram:ChargeIndicator>
+              <udt:Indicator>true</udt:Indicator>
+            </ram:ChargeIndicator>
+            <!-- Positionsrabatt -->
+            <ram:CalculationPercent>0.00</ram:CalculationPercent>
+            <!-- rabattierter endgültiger Zuschlag zum Bruttopreis der Position -->
+            <ram:ActualAmount currencyID="EUR">0.1000</ram:ActualAmount>
+          </ram:AppliedTradeAllowanceCharge>
+        </ram:GrossPriceProductTradePrice>
+        <ram:NetPriceProductTradePrice>
+          <!-- Nettobetrag - hier 10ct/kWh € -->
+          <ram:ChargeAmount currencyID="EUR">0.2000</ram:ChargeAmount>
+          <!-- Einheit der Abrechnungsmenge 1kWh -->
+          <ram:BasisQuantity unitCode="KWH">1.0000</ram:BasisQuantity>
+        </ram:NetPriceProductTradePrice>
+      </ram:SpecifiedSupplyChainTradeAgreement>
+
+      <!-- Mengenangaben -->
+      <ram:SpecifiedSupplyChainTradeDelivery>
+        <!-- Angabe der Verbrauchsmenge der Position -->
+        <ram:BilledQuantity unitCode="KWH">1000.0000</ram:BilledQuantity>
+      </ram:SpecifiedSupplyChainTradeDelivery>
+
+      <!-- Zeitraum / Zeilenbetrag / Steuern -->
+      <ram:SpecifiedSupplyChainTradeSettlement>
+        <!-- Umsatzsteuer -->
+        <ram:ApplicableTradeTax>
+          <ram:ApplicablePercent>19.00</ram:ApplicablePercent>
+        </ram:ApplicableTradeTax>
+        <!-- Abrechnungszeitraum der Zeile -->
+        <ram:BillingSpecifiedPeriod>
+          <ram:StartDateTime>
+            <udt:DateTimeString format="102">20160901</udt:DateTimeString>
+          </ram:StartDateTime>
+          <ram:EndDateTime>
+            <udt:DateTimeString format="102">20163009</udt:DateTimeString>
+          </ram:EndDateTime>
+        </ram:BillingSpecifiedPeriod>
+
+        <!-- Gesamtbetrag der Zeile -->
+        <ram:SpecifiedTradeSettlementMonetarySummation>
+          <ram:LineTotalAmount currencyID="EUR">100.00</ram:LineTotalAmount>
+        </ram:SpecifiedTradeSettlementMonetarySummation>
+      </ram:SpecifiedSupplyChainTradeSettlement>
+
+      <!-- Referenz zum abgerechneten Produkt -->
+      <ram:SpecifiedTradeProduct>
+        <ram:GlobalID schemeID="Z01">9990001000269</ram:GlobalID>
+        <ram:SellerAssignedID>WIRK_BASE_001_2016</ram:SellerAssignedID>
+        <ram:Name>Wirkarbeit umlaufend</ram:Name>
+        <ram:Description>Wirkarbeit ohne Tarifierung</ram:Description>
+        <!-- enthaltene Produkte / Teilelisten -->
+      </ram:SpecifiedTradeProduct>
+    </ram:IncludedSupplyChainTradeLineItem>
+
+    <!-- 002 Abrechnungszeile/Position -->
+    <ram:IncludedSupplyChainTradeLineItem>
+      <ram:AssociatedDocumentLineDocument>
+        <ram:LineID>002</ram:LineID>
+      </ram:AssociatedDocumentLineDocument>
+      <ram:SpecifiedSupplyChainTradeAgreement>
+
+        <ram:GrossPriceProductTradePrice>
+          <ram:ChargeAmount currencyID="EUR">600.0000</ram:ChargeAmount>
+        </ram:GrossPriceProductTradePrice>
+        <ram:NetPriceProductTradePrice>
+          <!-- Jahrespreis von 600€ mit 4 Nachkommastellen -->
+          <ram:ChargeAmount currencyID="EUR">600.0000</ram:ChargeAmount>
+          <!-- 1 Jahr hier entsprechend 365 Tage -->
+          <ram:BasisQuantity unitCode="DAY">365.0000</ram:BasisQuantity>
+        </ram:NetPriceProductTradePrice>
+
+      </ram:SpecifiedSupplyChainTradeAgreement>
+      <ram:SpecifiedSupplyChainTradeDelivery>
+        <!-- 30 Tage in dieser Rechnung -->
+        <ram:BilledQuantity unitCode="DAY">30.0000</ram:BilledQuantity>
+      </ram:SpecifiedSupplyChainTradeDelivery>
+
+      <!-- Zeitraum / Zeilenbetrag / Steuern -->
+      <ram:SpecifiedSupplyChainTradeSettlement>
+        <!-- Umsatzsteuer -->
+        <ram:ApplicableTradeTax>
+          <ram:ApplicablePercent>19.00</ram:ApplicablePercent>
+        </ram:ApplicableTradeTax>
+        <!-- Abrechnungszeitraum der Zeile -->
+        <ram:BillingSpecifiedPeriod>
+          <ram:StartDateTime>
+            <udt:DateTimeString format="102">20160901</udt:DateTimeString>
+          </ram:StartDateTime>
+          <ram:EndDateTime>
+            <udt:DateTimeString format="102">20160930</udt:DateTimeString>
+          </ram:EndDateTime>
+        </ram:BillingSpecifiedPeriod>
+        <!-- Gesamtbetrag der Zeile -->
+        <ram:SpecifiedTradeSettlementMonetarySummation>
+          <ram:LineTotalAmount currencyID="EUR">58.69</ram:LineTotalAmount>
+        </ram:SpecifiedTradeSettlementMonetarySummation>
+      </ram:SpecifiedSupplyChainTradeSettlement>
+
+      <!-- Referenz zum abgerechneten Produkt -->
+      <ram:SpecifiedTradeProduct>
+        <ram:GlobalID schemeID="Z01">9990001000615</ram:GlobalID>
+        <ram:SellerAssignedID>MDL2016</ram:SellerAssignedID>
+        <ram:Name>Entgelt für Messung und Ablesung</ram:Name>
+        <ram:Description>Messdienstleistung RLM/GSM</ram:Description>
+      </ram:SpecifiedTradeProduct>
+    </ram:IncludedSupplyChainTradeLineItem>
+
+    <!-- Beispiel Leistungspreis mit Nachberechnung -->
+    <!-- Klammerbildung über die Artikelnummer -->
+    <!-- 003 Leistung Netzntzung -->
+    <ram:IncludedSupplyChainTradeLineItem>
+      <ram:AssociatedDocumentLineDocument>
+        <ram:LineID>003</ram:LineID>
+      </ram:AssociatedDocumentLineDocument>
+      <ram:SpecifiedSupplyChainTradeAgreement>
+
+        <ram:GrossPriceProductTradePrice>
+          <ram:ChargeAmount currencyID="EUR">40.0000</ram:ChargeAmount>
+        </ram:GrossPriceProductTradePrice>
+        <ram:NetPriceProductTradePrice>
+          <!-- Jahrespreis von 365€ (1€/kW/d) -->
+          <ram:ChargeAmount currencyID="EUR">40.0000</ram:ChargeAmount>
+          <!-- Preis pro kW und Jahr -->
+          <!-- allerdings gibt es keine Option für kW/a -->
+          <!-- im Zweifel muss das Element entfallen -->
+          <ram:BasisQuantity unitCode="KWT">1.0000</ram:BasisQuantity>
+        </ram:NetPriceProductTradePrice>
+
+      </ram:SpecifiedSupplyChainTradeAgreement>
+      <ram:SpecifiedSupplyChainTradeDelivery>
+        <!-- 100 kW Jahreshöchstleistung -->
+        <ram:BilledQuantity unitCode="KWT">100.0000</ram:BilledQuantity>
+      </ram:SpecifiedSupplyChainTradeDelivery>
+
+      <!-- Zeitraum / Zeilenbetrag / Steuern -->
+      <ram:SpecifiedSupplyChainTradeSettlement>
+        <!-- Umsatzsteuer -->
+        <ram:ApplicableTradeTax>
+          <ram:ApplicablePercent>19.00</ram:ApplicablePercent>
+        </ram:ApplicableTradeTax>
+        <!-- Abrechnungszeitraum der Zeile -->
+        <ram:BillingSpecifiedPeriod>
+          <ram:StartDateTime>
+            <udt:DateTimeString format="102">20160901</udt:DateTimeString>
+          </ram:StartDateTime>
+          <ram:EndDateTime>
+            <udt:DateTimeString format="102">20160930</udt:DateTimeString>
+          </ram:EndDateTime>
+        </ram:BillingSpecifiedPeriod>
+        <!-- Gesamtbetrag der Zeile -->
+        <ram:SpecifiedTradeSettlementMonetarySummation>
+          <ram:LineTotalAmount currencyID="EUR">40.00</ram:LineTotalAmount>
+        </ram:SpecifiedTradeSettlementMonetarySummation>
+      </ram:SpecifiedSupplyChainTradeSettlement>
+
+      <!-- Referenz zum abgerechneten Produkt -->
+      <ram:SpecifiedTradeProduct>
+        <ram:GlobalID schemeID="Z01">9990001000053</ram:GlobalID>
+        <ram:SellerAssignedID>LEISTUNG_NN_2016</ram:SellerAssignedID>
+        <ram:Name>Leistung</ram:Name>
+        <ram:Description>Jahresleistungspreis</ram:Description>
+      </ram:SpecifiedTradeProduct>
+    </ram:IncludedSupplyChainTradeLineItem>
+
+    <!-- 004 Leistung Stronierung Vormonate (200€) -->
+    <ram:IncludedSupplyChainTradeLineItem>
+      <ram:AssociatedDocumentLineDocument>
+        <ram:LineID>004</ram:LineID>
+      </ram:AssociatedDocumentLineDocument>
+
+      <!-- Zeitraum / Zeilenbetrag / Steuern -->
+      <ram:SpecifiedSupplyChainTradeSettlement>
+        <!-- Umsatzsteuer -->
+        <ram:ApplicableTradeTax>
+          <ram:ApplicablePercent>19.00</ram:ApplicablePercent>
+        </ram:ApplicableTradeTax>
+        <!-- Abrechnungszeitraum der Stornierung -->
+        <ram:BillingSpecifiedPeriod>
+          <ram:StartDateTime>
+            <udt:DateTimeString format="102">20160101</udt:DateTimeString>
+          </ram:StartDateTime>
+          <ram:EndDateTime>
+            <udt:DateTimeString format="102">20160831</udt:DateTimeString>
+          </ram:EndDateTime>
+        </ram:BillingSpecifiedPeriod>
+        <!-- Gesamtbetrag der Zeile -->
+        <ram:SpecifiedTradeSettlementMonetarySummation>
+          <ram:LineTotalAmount currencyID="EUR">-200.00</ram:LineTotalAmount>
+        </ram:SpecifiedTradeSettlementMonetarySummation>
+      </ram:SpecifiedSupplyChainTradeSettlement>
+
+      <!-- Referenz zum abgerechneten Produkt -->
+      <ram:SpecifiedTradeProduct>
+        <ram:GlobalID schemeID="Z01">9990001000053</ram:GlobalID>
+        <ram:SellerAssignedID>LEISTUNG_NN_2016</ram:SellerAssignedID>
+        <ram:Name>Leistung</ram:Name>
+        <ram:Description>Jahresleistungspreis</ram:Description>
+      </ram:SpecifiedTradeProduct>
+    </ram:IncludedSupplyChainTradeLineItem>
+
+    <!-- 005 Leistung Nachberechnung Vormonate -->
+    <ram:IncludedSupplyChainTradeLineItem>
+      <ram:AssociatedDocumentLineDocument>
+        <ram:LineID>005</ram:LineID>
+      </ram:AssociatedDocumentLineDocument>
+      <ram:SpecifiedSupplyChainTradeAgreement>
+
+        <ram:GrossPriceProductTradePrice>
+          <ram:ChargeAmount currencyID="EUR">243.0000</ram:ChargeAmount>
+        </ram:GrossPriceProductTradePrice>
+        <ram:NetPriceProductTradePrice>
+          <!-- Jahrespreis von 365€ (1€/kW/d) -->
+          <ram:ChargeAmount currencyID="EUR">243.0000</ram:ChargeAmount>
+          <!-- Preis pro kW und Jahr -->
+          <!-- allerdings gibt es keine Option für kW/a -->
+          <!-- im Zweifel muss das Element entfallen -->
+          <ram:BasisQuantity unitCode="KWT">1.0000</ram:BasisQuantity>
+        </ram:NetPriceProductTradePrice>
+
+      </ram:SpecifiedSupplyChainTradeAgreement>
+      <ram:SpecifiedSupplyChainTradeDelivery>
+        <!-- 100 kW Jahreshöchstleistung -->
+        <ram:BilledQuantity unitCode="KWT">100.0000</ram:BilledQuantity>
+      </ram:SpecifiedSupplyChainTradeDelivery>
+
+      <!-- Zeitraum / Zeilenbetrag / Steuern -->
+      <ram:SpecifiedSupplyChainTradeSettlement>
+        <!-- Umsatzsteuer -->
+        <ram:ApplicableTradeTax>
+          <ram:ApplicablePercent>19.00</ram:ApplicablePercent>
+        </ram:ApplicableTradeTax>
+        <!-- Abrechnungszeitraum der Stornierung -->
+        <ram:BillingSpecifiedPeriod>
+          <ram:StartDateTime>
+            <udt:DateTimeString format="102">20160101</udt:DateTimeString>
+          </ram:StartDateTime>
+          <ram:EndDateTime>
+            <udt:DateTimeString format="102">20160831</udt:DateTimeString>
+          </ram:EndDateTime>
+        </ram:BillingSpecifiedPeriod>
+        <!-- Gesamtbetrag der Zeile -->
+        <ram:SpecifiedTradeSettlementMonetarySummation>
+          <ram:LineTotalAmount currencyID="EUR">243.00</ram:LineTotalAmount>
+        </ram:SpecifiedTradeSettlementMonetarySummation>
+      </ram:SpecifiedSupplyChainTradeSettlement>
+
+      <!-- Referenz zum abgerechneten Produkt -->
+      <ram:SpecifiedTradeProduct>
+        <ram:GlobalID schemeID="Z01">9990001000053</ram:GlobalID>
+        <ram:SellerAssignedID>LEISTUNG_NN_2016</ram:SellerAssignedID>
+        <ram:Name>Leistung</ram:Name>
+        <ram:Description>Jahresleistungspreis</ram:Description>
+      </ram:SpecifiedTradeProduct>
+    </ram:IncludedSupplyChainTradeLineItem>
+
+  </rsm2:SpecifiedSupplyChainTradeTransaction>
+</rsm2:CrossIndustryDocument>
